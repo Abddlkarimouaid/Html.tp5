@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "lancerquiz()">Quiz</button>
+    <script>
+        let Questions=[["Quel est capitale de maroc: ?","rabat"],["Quel est capitale de france: ?","paris"]];
+let score=0;
+function lancerquiz(){
+for (let i=0;i<2;i++){
+  let ve=prompt(Questions[i][0]);
+  if (ve==Questions[i][1]){
+    window.alert("reponse correct")
+    score=score+1;
+  }else{
+    window.alert("reponse incorrect!")
+  }
+}}
+    </script>
+    
+</body>
+</html>
